@@ -23,7 +23,7 @@ Web Fisher is a simple and comprehensive AI-powered web scraping, web applicatio
 6. Copy and paste the URL of the website you want to scrape. Web Fisher will then extract the website's body / document object model (DOM) content.
    * Web Fisher will not scrape style tags or script tags.
 7. Specify the information you would like the following large language model to process and retrieve from the extracted body / DOM content.
-8. Max Chunks allows you to define the maximum length of each chunk and the number of chunks per batch when splitting the extracted body or DOM content for the large language model to process. This batch processing approach helps the large language model efficiently handle and review the segmented text.
+8. Max Chunks allows you to define the maximum length of each chunk per batch when splitting the extracted body or DOM content for the large language model to process. This batch processing approach helps the large language model efficiently handle and review the segmented text.
 9. A response will be generated for you. If the answer satisfies your needs, you will be given the option to download the response.
 10. All prompts are saved in a file called past_chats.json, which can be found at the following path: "src/main/resources/db/past_chats.json".
 
