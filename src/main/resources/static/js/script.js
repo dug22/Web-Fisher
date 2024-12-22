@@ -20,7 +20,7 @@ async function loadPastChats() {
     }
 }
 
-//Saves a new past chat object once a request to the AI model is declared.
+//Saves a new past chat object once a request to the large language model is declared.
 function savePastChat(request) {
     const currentTime = new Date().toLocaleString();
     pastChats.push({ request, time: currentTime });
@@ -45,7 +45,7 @@ function updateSidebar() {
     });
 }
 
-//If click shows details about the past chat.
+//If clicked, shows details about the past chat.
 function showChatDetails(index) {
     const chat = pastChats[index];
     alert(`Full content for:\n\nTime: ${chat.time}\nRequest: ${chat.request}`);
@@ -58,10 +58,6 @@ async function parseContent() {
     const domContent = document.getElementById("domContent").value;
     const parseDescription = document.getElementById("parseDescription").value;
     const maxChunks = parseInt(document.getElementById("maxChunks").value, 10); // Use 10 as radix for decimal
-
-    console.log("Dropdown element:", document.getElementById("maxChunks"));
-    console.log("Selected value:", document.getElementById("maxChunks").value);
-    console.log("Parsed maxChunks value:", maxChunks);  // Log the parsed value
 
     const processCatchButton = document.querySelector(".process-catch-button");
     const castLineButton = document.querySelector("button[onclick='scrapeWebsite()']");
@@ -95,7 +91,7 @@ async function parseContent() {
 }
 
 
-//Updates the selected model.
+//Updates the selected large language model.
 function updateModel() {
     const selectedModel = document.getElementById("modelSelector").value;
     fetch('/api/update-model', {
@@ -175,7 +171,7 @@ async function scrapeWebsite() {
     }
 }
 
-//On load or refreshes, in realtime displays the list of past chats, and gets the current large language model in use.
+//On load or refresh, in realtime displays the list of past chats, and gets the current large language model in use.
 window.onload = async () => {
     loadPastChats();
     console.log("Page loaded. Past chats should be displayed.");
