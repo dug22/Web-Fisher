@@ -1,5 +1,5 @@
 # About
-Web Fisher is a simple and comprehensive AI-powered web scraping, web application that uses Ollama, Playwright, Spring AI, and other libraries. With the scraped web content you pulled and provided, you can leverage large language models to provide insightful answers/responses.
+Web Fisher is a simple and comprehensive AI-powered web scraping, web application that uses Ollama, Playwright, Spring AI, and other libraries. With the scraped web content you pulled and provided, you can leverage large language models to provide insightful answers/responses to your questions/descriptions.
 
 # Getting Started
 
