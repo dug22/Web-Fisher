@@ -38,6 +38,8 @@ WebFisher can be used to do the following:
 * And a lot more.
 
 # Media
+![Image1](https://github.com/dug22/Web-Fisher/blob/master/images/web%20fisher%20visual%2001.png?raw=true)
+![Image2](https://github.com/dug22/Web-Fisher/blob/master/images/web%20fisher%20visual%2002.png?raw=true)
 
 
 # URL Endpoints:
